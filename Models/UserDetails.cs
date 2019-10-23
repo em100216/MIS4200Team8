@@ -40,7 +40,7 @@ namespace MIS4200Team8.Models
 
         [Required]
         [Display(Name ="Hire Date")]
-        [DisplayFormat(DataFormatString = "{0:d", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
         public DateTime hireDate { get; set; }
         
         
