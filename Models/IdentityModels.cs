@@ -17,7 +17,10 @@ namespace MIS4200Team8.Models
             return userIdentity;
         }
     }
+}
 
+namespace MIS4200Team8.Models
+{
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
@@ -29,5 +32,13 @@ namespace MIS4200Team8.Models
         {
             return new ApplicationDbContext();
         }
+
+      
     }
+         
 }
+
+
+
+
+
