@@ -33,7 +33,7 @@ namespace MIS4200Team8.Models
             return new ApplicationDbContext();
         }
 
-      
+        public System.Data.Entity.DbSet<MIS4200Team8.Models.sendPoints> sendPoints { get; set; }
     }
          
 }

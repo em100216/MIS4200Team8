@@ -18,6 +18,7 @@ namespace MIS4200Team8.DAL
         // and is the name used to reference the entity in code
         public DbSet<UserDetail> UserDetails { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<sendPoints> sendPoints { get; set; }
 
         
     }
