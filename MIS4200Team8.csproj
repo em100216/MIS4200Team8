@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\sendPointsController.cs" />
     <Compile Include="Controllers\UserDetailsController.cs" />
     <Compile Include="DAL\Context8.cs" />
     <Compile Include="Global.asax.cs">
@@ -248,6 +249,11 @@
     <Content Include="Views\UserDetails\Details.cshtml" />
     <Content Include="Views\UserDetails\Edit.cshtml" />
     <Content Include="Views\UserDetails\Index.cshtml" />
+    <Content Include="Views\sendPoints\Create.cshtml" />
+    <Content Include="Views\sendPoints\Delete.cshtml" />
+    <Content Include="Views\sendPoints\Details.cshtml" />
+    <Content Include="Views\sendPoints\Edit.cshtml" />
+    <Content Include="Views\sendPoints\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
