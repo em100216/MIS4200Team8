@@ -39,6 +39,8 @@ namespace MIS4200Team8.Controllers
         // GET: UserDetails/Create
         public ActionResult Create()
         {
+
+
             return View();
         }
 

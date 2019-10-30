@@ -10,6 +10,7 @@ namespace MIS4200Team8.Migrations.MISContext
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
             MigrationsDirectory = @"Migrations\MISContext";
             ContextKey = "MIS4200Team8.DAL.Context8";
         }
@@ -18,8 +19,7 @@ namespace MIS4200Team8.Migrations.MISContext
         {
             //  This method will be called after migrating to the latest version.
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data.
+                      
         }
     }
 }
