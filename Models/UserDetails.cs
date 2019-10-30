@@ -44,10 +44,12 @@ namespace MIS4200Team8.Models
         [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
         public DateTime hireDate { get; set; }
 
-        
+        public ICollection<Guid> Guids { get; set; }
 
-        
-     }
+
+
+
+    }
     
  
 
