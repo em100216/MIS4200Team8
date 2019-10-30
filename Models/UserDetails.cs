@@ -5,12 +5,13 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 using MIS4200Team8.Models;
 using System.Data.Entity;
+using Microsoft.AspNet.Identity;
 
 namespace MIS4200Team8.Models
 {
     public class UserDetail
+
     {
-        
         public Guid ID { get; set; }
         [Required]
         [EmailAddress]
@@ -26,27 +27,30 @@ namespace MIS4200Team8.Models
         public string lastName { get; set; }
 
         [Required]
-        [Display(Name ="Primary Phone")]
+        [Display(Name = "Primary Phone")]
         [Phone]
         public string PhoneNumber { get; set; }
 
         [Required]
-        [Display(Name ="Department")]
+        [Display(Name = "Department")]
         public string Department { get; set; }
 
         [Required]
-        [Display(Name ="Current Position")]
+        [Display(Name = "Current Position")]
         public string Position { get; set; }
 
         [Required]
-        [Display(Name ="Hire Date")]
+        [Display(Name = "Hire Date")]
         [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
         public DateTime hireDate { get; set; }
+
         
+
         
+     }
+    
+ 
 
-
-
-    }
+    
 
 }
