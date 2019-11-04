@@ -50,7 +50,7 @@ namespace MIS4200Team8.Controllers
         {
             if (ModelState.IsValid)
             {
-                sendPoints.Guid = Guid.NewGuid();
+                sendPoints.ID = Guid.NewGuid();
                 db.sendPoints.Add(sendPoints);
                 db.SaveChanges();
                 return RedirectToAction("Index");

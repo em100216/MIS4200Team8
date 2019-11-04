@@ -5,14 +5,16 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 using MIS4200Team8.Models;
 using System.Data.Entity;
-
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MIS4200Team8.Models
 {
     public class sendPoints
     {
 
-
+        [Key]
+        [Required]
+        public Guid ID { get; set; }
         [Required]
         [Display(Name = "First Name")]
         public string firstName { get; set; }
@@ -25,9 +27,13 @@ namespace MIS4200Team8.Models
         [Required]
         [Display(Name = "Points")]
         public int points { get; set; }
-
+        public Guid userID { get; set; }
+        [ForeignKey("userID")] 
+        public virtual UserDetail UserDetail { get; set; }
         
-        public virtual Guid Guid {get; set;}
+
+
+
 
 
     }
