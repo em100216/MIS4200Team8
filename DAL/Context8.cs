@@ -17,8 +17,8 @@ namespace MIS4200Team8.DAL
         // the value outside should generally be the plural of the class name
         // and is the name used to reference the entity in code
         public DbSet<UserDetail> UserDetails { get; set; }
-
         public DbSet<sendPoints> sendPoints { get; set; }
+        public DbSet<CoreValue> CoreValues { get; set; }
 
         
     }
